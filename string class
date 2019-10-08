@@ -1,0 +1,19 @@
+#include<iostream>
+#include<iomanip> // to set the width and amnipulate data.
+#include<cmath> //math library function
+#include<string> // to allow us to store strings
+
+using namespace std;
+int main()
+{
+	// learning string class file.
+
+	string name; //use a string data type to store names.
+	cout << "Please enter a name: ";
+	//cin >> name;
+	getline(cin, name); // is function in <string>
+	cout << "Your name is: " << name << endl;
+
+	return 0;
+
+}
