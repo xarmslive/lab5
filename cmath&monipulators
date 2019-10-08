@@ -1,0 +1,30 @@
+#include<iostream>
+#include<iomanip> // to set the width and amnipulate data.
+#include<cmath> //math library function
+
+using namespace std;
+int main()
+{
+	int x=4, a, b=4, c=2, z=5;
+	double y = 0.0;
+
+	y = x + 9;
+	cout << y << endl;
+
+	a = (2 * b) + (2 * c);
+	cout << a << endl;
+
+	y = pow(x, 3);
+	cout <<setw(6)<< y << endl; // set width
+
+	y = x / pow(z, 2) + 2;
+	cout << showpoint << setprecision(4) << y << endl; // show point is to show the digits after the flot
+
+	y = pow(x, 2) / pow(y, 2);
+	cout << fixed << setprecision(2) << "double of y: " << y << endl; // setpercision is to control how many numbers after the double.
+	// also used fixed to fix the number before flouting point.
+	cout << "int value of y: " << static_cast<int>(y) << endl; // to round the double output into int.
+
+	return 0;
+
+}
