@@ -9,7 +9,7 @@ int main()
 	double y = 0.0;
 
 	y = x + 9;
-	cout << y << endl;
+	cout <<setfill('*')<<setw(6)<< y << endl; // set fill is to fill the empty spaces with * single char.
 
 	a = (2 * b) + (2 * c);
 	cout << a << endl;
