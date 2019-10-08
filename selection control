@@ -1,0 +1,50 @@
+#include<iostream>
+#include<iomanip> // to set the width and amnipulate data.
+#include<cmath> //math library function
+#include<string> // to allow us to store strings
+
+using namespace std;
+int main()
+{
+	int x, z;
+	string name;
+	cout << "Please enter your name: ";
+	cin >> name;
+	cout << "thank you!" << endl;
+	
+	cout << "Please enter X & Y value: ";
+	cin >> x >> z;
+	if (x > 0)
+	{
+		cout << "you have entered a positive value." << endl;
+	}
+	else if (x < 0)
+	{
+		cout << "you entered a negative value." << endl;
+		cout << "Please enter a positive number: ";
+		cin >> x;
+	}
+	else
+	{
+		cout << "you entered a zero!";
+	}
+	if (z > 0)
+	{
+		cout << "you have entered a positive value." << endl;
+	}
+	else if (z < 0)
+	{
+		cout << "you entered a negative value." << endl;
+		cout << "Please enter a positive number: ";
+		cin >> z;
+	}
+	else
+	{
+		cout << "you entered a zero!";
+	}
+	return 0;
+
+}
+
+// yourtask: using the selection control structure,
+// ask the user to enter positive value for x and z.
